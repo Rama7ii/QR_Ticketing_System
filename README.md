@@ -10,9 +10,15 @@ Welcome to the QR Ticketing System repository! This project is a minimal yet eff
 - **PDF Download:** Allows users to download a PDF containing the QR code for their ticket.
 - **Slot Booking (Future Enhancement):** The system supports slot booking for specific time slots, enabling personal usage for events with limited seating or for booking appointments.
 
-## Live Demo
-
-Check out the live project [here](https://qr-ticketing-system.onrender.com/). Experience the seamless ticketing process and explore the features firsthand.
+## Disclaimer & Contributions
+Note: This repository is a fork of the original QR Ticketing System by Sarthak Lamba.
+I am not the original creator. This fork includes my own contributions and enhancements, including:
+Persistent ticket scan tracking with status and timestamps
+Secure staff scanning dashboard with login access
+QR code validation and reset functionality
+Detailed Excel report generation for scanned tickets
+Updated README and documentation
+All original features of the QR Ticketing System are maintained, and my changes aim to improve usability for event management and reporting.
 
 ## How to Use
 
