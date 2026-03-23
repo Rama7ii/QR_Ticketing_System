@@ -44,3 +44,23 @@ For any inquiries or suggestions, you can reach out to me via email: samlamba29@
 
 I welcome your feedback and contributions to enhance this QR Ticketing System.<br>
 Happy coding!!
+
+## Ticket Validation API
+
+The backend now supports persistent ticket validation with SQLite-backed status tracking.
+
+- New tickets are created with status `unused`.
+- `POST /validate` checks a scanned QR payload or raw `ticket_id`.
+- Responses are returned as JSON with one of these values in `status`:
+  - `VALID`
+  - `INVALID`
+  - `ALREADY USED`
+- Once a ticket is validated, it is marked as `used` and the optional `used_at` timestamp is stored permanently.
+
+Example JSON request:
+
+```json
+{"ticket_id": "1234567890"}
+```
+
+You can also send the full QR text using the `qr_data` field.
